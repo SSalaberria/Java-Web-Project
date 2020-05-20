@@ -60,7 +60,7 @@
   </dependencies>
 
   <build>
-    <finalName>java-web-project</finalName>
+    <finalName>webapp</finalName>
     <pluginManagement>
 
       <plugins>
