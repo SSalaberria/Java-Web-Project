@@ -18,7 +18,7 @@ public class WelcomeController {
     }
 
     private String getMessage() {
-        return "Hello World";
+        return "Test Jenkins Deploy";
     }
 
 }
