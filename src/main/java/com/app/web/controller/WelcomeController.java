@@ -13,12 +13,17 @@ public class WelcomeController {
     public String index(Model model) {
         model.addAttribute("msg", getMessage());
         model.addAttribute("today", new Date());
+        model.addAttribute("title", getTitle());
         return "index";
 
     }
 
     private String getMessage() {
         return "Test Jenkins Deploy";
+    }
+
+    private String getTitle() {
+        return "VyVS";
     }
 
 }
