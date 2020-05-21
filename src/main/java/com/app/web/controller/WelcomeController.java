@@ -23,7 +23,7 @@ public class WelcomeController {
     }
 
     private String getTitle() {
-        return "VyVS123";
+        return "VyVS";
     }
 
 }
