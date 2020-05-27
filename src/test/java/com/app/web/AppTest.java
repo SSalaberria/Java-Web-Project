@@ -1,6 +1,8 @@
 package com.app.web;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -9,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class AppTest {
 
-    private String baseUrl = "http://localhost:8080/webapp/today";
+    private String baseUrl = "http://localhost:8080/webapp/form";
     private String driverPath = "C:\\Users\\s_sal\\chromedriver\\chromedriver.exe";
     private WebDriver driver;
 
@@ -29,6 +31,18 @@ public class AppTest {
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
     }
+
+    @Test
+    public void verifyEmptyNameCheck() {
+        driver.findElement(By.id("submit-button")).click();
+        WebElement feedback = driver.findElement(By.id("invalid-name-feedback"));
+        String expectedInvalidFeedback = "Valid first name is required.";
+        Assert.assertEquals(expectedInvalidFeedback, feedback.getText());
+    }
+
+    /**
+     * @Test public void failedTest() { Assert.fail(); }
+     */
 
     /**
      * Close browser after running the tests
