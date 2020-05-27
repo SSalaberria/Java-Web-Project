@@ -40,9 +40,10 @@ public class AppTest {
         Assert.assertEquals(expectedInvalidFeedback, feedback.getText());
     }
 
-    /**
-     * @Test public void failedTest() { Assert.fail(); }
-     */
+    @Test
+    public void failedTest() {
+        Assert.fail();
+    }
 
     /**
      * Close browser after running the tests
