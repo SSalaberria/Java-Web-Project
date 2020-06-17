@@ -41,10 +41,6 @@ public class AppTest {
     }
 
     /**
-     * @Test public void failedTest() { Assert.fail(); }
-     */
-
-    /**
      * Close browser after running the tests
      */
     @AfterTest
