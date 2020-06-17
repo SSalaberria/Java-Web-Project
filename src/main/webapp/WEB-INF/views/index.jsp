@@ -18,9 +18,8 @@
 <body>
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
-                alt="" width="72" height="72">
             <h2>Checkout form</h2>
+            <h3>Today is ${date}</h3>
         </div>
 
         <div class="row">
@@ -51,16 +50,9 @@
                         </div>
                         <span class="text-muted">$5</span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between bg-light">
-                        <div class="text-success">
-                            <h6 class="my-0">Promo code</h6>
-                            <small>EXAMPLECODE</small>
-                        </div>
-                        <span class="text-success">-$5</span>
-                    </li>
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Total (USD)</span>
-                        <strong>$20</strong>
+                        <strong>${sum}</strong>
                     </li>
                 </ul>
 
