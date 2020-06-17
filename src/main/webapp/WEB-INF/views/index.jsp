@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>changed title</title>
+    <title>${title}</title>
     <spring:url value="/resources/css/myCss.css" var="myCss" />
     <spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
     <spring:url value="/resources/js/bootstrap.bundle.min.js" var="bootstrapJs" />
